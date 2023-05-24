@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/serif');
+@import url('https://fonts.cdnfonts.com/css/saira');
+
+                
+/* bg-[#3a2350] */
+/* [#3a235922] */
+
+* {
+    box-sizing: border-box !important;
+}
