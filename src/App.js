@@ -15,22 +15,15 @@ import Faq from "./components/Faq";
 function App() {
   return (
     <div className="font-graphik bg-[rgba(80,56,121,0.03)] overflow-x-hidden ">
-       <Header/>       
-       
-         <Banner/>
-         <Partners/> 
+      <Header/>       
+      <Banner/>
+      <Partners/> 
       <Home/>
       <Testimonials/> 
       <WhyUs/>
-      
       <Speakers/> 
-       {/* <Programs/> */}
-        {/*  <WhyUs/>  */}
-       {/* <Faqs/> */}
-       {/* <Course/> */}
-       {/* <Advertise/> */}
-       <Faq/> 
-       <Footer/>
+      <Faq/> 
+      <Footer/>
     </div>
   );
 }
