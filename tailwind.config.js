@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        marquee: 'marquee 50s linear infinite',
-        marquee2: 'marquee2 20s linear infinite',
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -168,7 +168,7 @@ module.exports = {
         'hero1': "url('./assets/images/city2.png')",
         'hero-2': "url('./assets/images/hero-2.png')",
 
-        'hero-city' : "url('./assets/images/background2.jpg')",
+        'hero-city' : "url('./assets/images/background3.jpg')",
       },
     },
     

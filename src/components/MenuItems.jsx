@@ -31,8 +31,8 @@ const MenuItems = () => {
     <nav>
         <ul className='flex flex-col gap-3 md:flex md:flex-col lg:flex lg:flex-row lg:gap-[1.3rem] mt-2'>
             {menuLinks.map(({title, path, id}) => (
-                <li key={id} className='text-black md:text-white text-base'>
-                    <a href={path} className='text-black md:text-white text-base hover:text-yellow'>
+                <li key={id} className='text-black text-base'>
+                    <a href={path} className='text-black text-base hover:text-blue'>
                         {title}
                     </a>
                 </li>

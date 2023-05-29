@@ -3,96 +3,81 @@ import logo from "../assets/images/Tlogo.png";
 import tenece from "../assets/images/tenece.jpeg";
 import goldenheart from "../assets/images/goldenheart.jpeg";
 import fastpace from "../assets/images/fastpace.jpeg";
+import BrandLogoCard from "./BrandLogoCard";
+
+const BrandLogo = [
+  {
+    id: 1,
+    image: logo,
+    title: 'logo-icon'
+  },
+		{
+      id: 2,
+      image: tenece,
+      title: 'tenece-icon'
+    },
+		{
+      id: 3,
+      image: goldenheart,
+      title: 'goldenheart-icon'
+    },
+		{
+      id: 4,
+      image: fastpace,
+      title: 'fastpace-icon'
+  },
+    {
+    id: 5,
+    image: logo,
+    title: 'logo-icon'
+  },
+		{
+      id: 6,
+      image: tenece,
+      title: 'tenece-icon'
+    },
+		{
+      id: 7,
+      image: goldenheart,
+      title: 'goldenheart-icon'
+    },
+		{
+      id: 8,
+      image: fastpace,
+      title: 'fastpace-icon'
+    },
+]
 
 
 const Partners = () => {
   return (
     <div className="bg-white px-20">
-    <h3 className="font-sans font-extralight grayscale text-2xl text-center">
-    Partners and Sponsors
-          </h3>
-    <div className="h-20 mt-2 bg-gray justify-center items-center" >
-     
-      
-        
-        <div className="flex flex-col relative overflow-x-hidden">
-          <div className="md:flex md:justify-center items-center px-4 my-2 animate-marquee whitespace-nowrap">
-            
-            <div>
-              <img
-                className=" w-[140px] h-[35px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[90px] h-[45px] items-center justify-center px-4 mx-4 grayscale"
-                src={tenece}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[90px] h-[45px] items-center justify-center px-4 mx-4 grayscale"
-                src={goldenheart}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[90px] h-[45px] items-center justify-center px-4 mx-4 grayscale"
-                src={fastpace}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[120px] h-[25px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[140px] h-[35px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
-           
-            
-          </div>
+      <p className="text-center text-title-1">Meet Our Partners</p>
 
-          {/* <div className=" md:flex md:justify-center items-center px-4 my-2 absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <div>
-              <img
-                className=" w-[140px] h-[35px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
-    
-            <div>
-              <img
-                className=" w-[125px] h-[35px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
-            <div>
-              <img
-                className=" w-[125px] h-[35px] items-center justify-center px-4 mx-4 grayscale"
-                src={logo}
-                alt="logo"
-              />
-            </div>
+      <div className='flex justify-center items-center overflow-x-hidden'>
+        <div className= 'flex py-5'>
+          {BrandLogo.map(({ id, image, title }) => (
+            <BrandLogoCard
+              key={id}
+              image={image}
+              title={title}
+            />
+          ))}
         </div>
-        */}
-          
-        </div>
+
+        {/* <div className= 'flex absolute top-0 py-12 animate-marquee2 whitespace-nowrap'>
+          {BrandLogo.map(({ id, image, title }) => (
+            <BrandLogoCard
+              key={id}
+              image={image}
+              title={title}
+            />
+          ))}
+        </div> */}
       </div>
     </div>
+
+    
   );
 };
 

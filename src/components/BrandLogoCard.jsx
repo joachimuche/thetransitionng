@@ -2,9 +2,9 @@ import React from 'react'
 
 const BrandLogoCard = ({image, title}) => {
   return (
-    <div className='w-[140px] h-[35px] items-center justify-center px-4 mx-4 grayscale'>
-        <div className=' flex justify-center items-center rounded-full'>
-        <img src={image} alt={title}/>
+    <div className='mx-4 p-5 flex items-center min-w-[80px]'>
+        <div className='w-[48px] h-[48px] rounded-full flex justify-center items-center'>
+        <img src={image} alt={title}  />
         </div>
     </div>
   )

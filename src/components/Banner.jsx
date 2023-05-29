@@ -2,6 +2,7 @@
 import round1 from "../assets/images/circle.png";
 import React, { useState, useEffect } from 'react';
 import Timer from "./Timer";
+import MenuAction from "./MenuAction";
 
 
 
@@ -34,7 +35,7 @@ const Banner = () => {
       setTimeout(() => {
         setCurrentTitle((prevTitle) => (prevTitle + 1) % title.length);
         setTitleAnimation(false);
-      }, 7000); // Adjust the transition duration (in milliseconds)
+      }, 5000); // Adjust the transition duration (in milliseconds)
     }, 5000); // Adjust the interval time (in milliseconds)
 
     return () => clearInterval(interval);
@@ -46,14 +47,16 @@ const Banner = () => {
       <div className="lg:mt-30 font-saira text-center font-light -mt-px px-10 text-2xl xl:mt-20 sm:mt-10 sm:text-base md:text-2xl lg:text-xl xl:text-xl text-white">
         THE TRANSITION CONFERENCE 2023
       </div>
-      <div className='text-2xl mt-[12px] text-yellow lg:text-6xl '> 
+      <div className='text-2xl mt-[12px] text-blue lg:text-6xl '> 
         {title[currentTitle]} 
       </div>
       <div className="flex justify-center items-center">
         <h3 className='text-center text-white mt-2 lg:mt-4'> {texts[currentText]}</h3>
       </div>
       
-      <Timer/> 
+        <Timer /> 
+        
+        <MenuAction className='w-[500px]'/>
         
       <div className="hidden lg:flex h-5 items-center justify-center">
         <img src={round1} className='absolute w-40 z-10 left-10' alt=''/>

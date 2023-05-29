@@ -29,7 +29,7 @@ const Header = () => {
         <div className="text-center lg:hidden" onClick={() => setOpen(!open)}>
           <div className='flex justify-between'>
             <a href='/'>
-                <img src={Logo} alt='logo-icon' width={150} height={150}/>
+                <img src={Logo} alt='logo-icon' width={150} height={150} className='bg-blend-burn contrast-100'/>
             </a>
             <div className="mt-4">
               <HiOutlineXMark
@@ -44,13 +44,13 @@ const Header = () => {
       </div>
 
       {/* Other screen */}
-          <div className={color ? 'fixed bg-black bg-opacity-90 w-full flex justify-between items-center py-5 px-4 md:px-10 lg:px-20 z-40' : 'fixed w-full flex justify-between items-center py-5 px-4 md:px-10 lg:px-20 z-40'}>
+          <div className={color ? 'fixed bg-white bg-opacity-90 w-full flex justify-between items-center py-5 px-4 md:px-10 lg:px-20 z-40' : 'fixed w-full flex justify-between items-center py-5 px-4 md:px-10 lg:px-20 z-40'}>
           <a href='/'>
               <img src={Logo} alt='logo-icon' width={150} height={150}/>
           </a>
           <HiBars3BottomRight
               onClick={() => setOpen(!open)}
-              className="lg:hidden text-3xl text-white"
+              className="lg:hidden text-3xl text-black"
             />
           <div className='hidden lg:flex'>
               <MenuItems />
