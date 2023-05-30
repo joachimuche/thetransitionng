@@ -8,6 +8,8 @@ module.exports = {
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
+        movedown: 'movedown 4s linear 1',
+        'fade-in': 'fade-in 0.5s ease-out',
       },
       keyframes: {
         marquee: {
@@ -18,6 +20,14 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
+        movedown: {
+          '0%': { transform: 'translateY(-100px)' },
+          '100%': {transform: 'translateY(0)'}
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': {opacity: '1'},
+        }
       },
 
       fontSize: {

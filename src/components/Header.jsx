@@ -18,7 +18,7 @@ const Header = () => {
 
      window.addEventListener('scroll', changeColor)
   return (
-    <div className='relative'>
+    <div className='relative animate-movedown'>
       {/* Mobile view */}
         
       <div className={`${

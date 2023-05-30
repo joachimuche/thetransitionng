@@ -1,9 +1,10 @@
 import React from "react";
-
+import FadeInAnimation from "../components/FadeInAnimation";
 
 
 const Home = () => {
   return (
+    <FadeInAnimation>
     <div> 
         <section id='about' className=' py-2 md:py-10 px-4 md:px-10 lg:px-20'>
         <div className='flex justify-center items-center'>
@@ -20,7 +21,8 @@ const Home = () => {
         </div>
         </div>
       </section>
-    </div>
+      </div>
+    </FadeInAnimation>
   );
 };
 
